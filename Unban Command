@@ -1,0 +1,57 @@
+{
+  "name": "unban",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Unbanning user...",
+      "storage": "1",
+      "varName2": "unban1",
+      "name": "Send Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Unban Member"
+    },
+    {
+      "storage": "1",
+      "varName": "unban1",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User Unbanned!\n©2018-2020 Crybot Development",
+      "storage": "1",
+      "varName2": "unban2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "unban2",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "PxGnv"
+}

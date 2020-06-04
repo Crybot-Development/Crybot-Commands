@@ -1,0 +1,48 @@
+{
+  "name": "clearmessages",
+  "permissions": "NONE",
+  "restriction": "0",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "amount",
+      "name": "Store Command Params"
+    },
+    {
+      "channel": "0",
+      "count": "${tempVars(\"amount\")}",
+      "condition": "0",
+      "custom": "",
+      "varName": "",
+      "name": "Delete Bulk Messages"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"amount\")} Messages Cleared\n©2018-2020 Crybot Development\n    ",
+      "storage": "1",
+      "varName2": "clear",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "clear",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "yFtQO"
+}

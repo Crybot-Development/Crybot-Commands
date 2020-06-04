@@ -1,0 +1,63 @@
+{
+  "name": "announce",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "info": "4",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "mentioned-channel2",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "parameter-3",
+      "name": "Store Command Params"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#0000FF",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${msg.author.avatarURL}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "2",
+      "varName": "csgoannouncements",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "2",
+      "varName": "csgoannouncements",
+      "message": "${tempVars(\"parameter-3\")}\n\nAnnouncement By: **${member}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "2",
+      "varName": "csgoannouncements",
+      "channel": "3",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "✅ Announcement sent to ${tempVars(\"mentioned-channel2\")}!\n©2018-2020 Crybot Development",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "wlMxc"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "changename",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "XJzrl",
+  "actions": [
+    {
+      "member": "0",
+      "varName": "",
+      "nickname": "",
+      "name": "Set Member Nickname"
+    }
+  ]
+}

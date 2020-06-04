@@ -1,0 +1,57 @@
+{
+  "name": "ban",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Banning user...",
+      "storage": "1",
+      "varName2": "ban1",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "ban1",
+      "name": "Delete Message"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "reason": "Violation of server rules",
+      "name": "Ban Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User has been banned\n©2018-2020 Crybot Development",
+      "storage": "1",
+      "varName2": "ban2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "ban2",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "yROhx"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "kick",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Kicking...",
+      "storage": "1",
+      "varName2": "kick1",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "kick1",
+      "name": "Delete Message"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "reason": "Violating server rules",
+      "name": "Kick Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User has been Kicked!\n©2018-2020 Crybot Development",
+      "storage": "1",
+      "varName2": "kick2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "kick2",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "VfuCU"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "unmute",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Unmuting user...",
+      "storage": "1",
+      "varName2": "unmute1",
+      "name": "Send Message"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "mute": "1",
+      "name": "Set Member Mute"
+    },
+    {
+      "storage": "1",
+      "varName": "unmute1",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User Unmuted!\n©2018-2020 Crybot Development",
+      "storage": "1",
+      "varName2": "unmute2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "unmute2",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "yZiBI"
+}

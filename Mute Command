@@ -1,0 +1,52 @@
+{
+  "name": "mute",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Muting user...",
+      "storage": "1",
+      "varName2": "mute1",
+      "name": "Send Message"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "mute": "0",
+      "name": "Set Member Mute"
+    },
+    {
+      "storage": "1",
+      "varName": "mute1",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User Muted!\n©2018-2020 Crybot Development",
+      "storage": "1",
+      "varName2": "mute2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "mute2",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "HtauM"
+}
